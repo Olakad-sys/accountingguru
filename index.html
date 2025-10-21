@@ -1,65 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AccountingGuru – Learn Accounting for Free</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f7fa; color:#333; }
-        header { background:#0d47a1; color:white; padding: 20px; text-align:center; }
-        nav a { margin: 0 15px; color:white; text-decoration:none; font-weight:bold; }
-        section { padding: 40px 20px; max-width: 900px; margin: auto; }
-        h1,h2 { color:#0d47a1; }
-        footer { text-align:center; padding:20px; background:#0d47a1; color:white; }
-        .lesson { background:white; padding:20px; margin-bottom:20px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AccountingGuru — Learn Accounting for Free</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header>
-        <h1>AccountingGuru</h1>
-        <p>Learn Accounting for Free – Step by Step Lessons</p>
-        <nav>
-            <a href="#intro">Introduction</a>
-            <a href="#financials">Financial Statements</a>
-            <a href="#journal">Journal Entries</a>
-            <a href="#budgeting">Budgeting</a>
-        </nav>
+  <aside class="sidebar">
+    <div class="brand">
+      <h1>AccountingGuru</h1>
+      <p>Free, text-based accounting lessons — from beginner to intermediate</p>
+    </div>
+    <nav>
+      <a href="lessons/intro.html">Introduction</a>
+      <a href="lessons/financial-statements.html">Financial Statements</a>
+      <a href="lessons/journal-entries.html">Journal Entries & Ledgers</a>
+      <a href="lessons/trial-balance.html">Trial Balance</a>
+      <a href="lessons/adjusting-closing.html">Adjusting & Closing Entries</a>
+      <a href="lessons/assets-liabilities-equity.html">Assets, Liabilities & Equity</a>
+      <a href="lessons/budgeting.html">Budgeting & Forecasting</a>
+      <a href="lessons/cost-accounting.html">Cost Accounting Basics</a>
+      <a href="lessons/financial-analysis.html">Financial Analysis & Ratios</a>
+    </nav>
+    <footer class="sidebar-footer">
+      <p>© <span id="year"></span> AccountingGuru</p>
+    </footer>
+  </aside>
+
+  <main class="content">
+    <header class="hero">
+      <h2>Welcome to AccountingGuru</h2>
+      <p>Learn accounting the simple way — short lessons, clear examples, and quick exercises you can practice right now.</p>
+      <div class="quicklinks">
+        <a class="btn" href="lessons/intro.html">Start Learning →</a>
+        <a class="btn ghost" href="lessons/financial-statements.html">See Financial Statements</a>
+      </div>
     </header>
 
-    <section id="intro">
-        <h2>Introduction to Accounting</h2>
-        <div class="lesson">
-            <p>Accounting is the process of recording, summarizing, and reporting financial transactions. It's used by businesses, governments, and individuals to make informed decisions.</p>
-            <p><strong>Example:</strong> Keeping track of income and expenses for your small business.</p>
-        </div>
+    <section class="cards">
+      <article class="card">
+        <h3>Step-by-step lessons</h3>
+        <p>Lessons start easy and build up. Each page explains the idea, shows an example, and gives a mini exercise.</p>
+      </article>
+
+      <article class="card">
+        <h3>Text-based & downloadable</h3>
+        <p>All lessons are text-first so they load fast and are simple to read. PDF download links can be added later.</p>
+      </article>
+
+      <article class="card">
+        <h3>Free for everyone</h3>
+        <p>No paywalls. Use it for study, revision, or teaching beginners.</p>
+      </article>
     </section>
 
-    <section id="financials">
-        <h2>Financial Statements</h2>
-        <div class="lesson">
-            <p>Financial statements include the Income Statement, Balance Sheet, and Cash Flow Statement. They show the performance and position of a business.</p>
-            <p><strong>Example:</strong> Income Statement shows revenues minus expenses to calculate profit.</p>
-        </div>
+    <section class="howto">
+      <h3>How to use this site</h3>
+      <ol>
+        <li>Choose a lesson from the left menu.</li>
+        <li>Read the explanation and work through the example.</li>
+        <li>Try the short exercise at the bottom of each lesson.</li>
+      </ol>
     </section>
 
-    <section id="journal">
-        <h2>Journal Entries & Ledgers</h2>
-        <div class="lesson">
-            <p>Journal entries are the basic building blocks of accounting. Each transaction is recorded with a debit and a credit.</p>
-            <p><strong>Example:</strong> Selling goods for cash: Debit Cash, Credit Sales Revenue.</p>
-        </div>
+    <section class="about">
+      <h3>About AccountingGuru</h3>
+      <p>This site was built to make accounting approachable. Content is written in plain language so absolute beginners can follow along.</p>
     </section>
+  </main>
 
-    <section id="budgeting">
-        <h2>Budgeting & Forecasting</h2>
-        <div class="lesson">
-            <p>Budgeting helps plan future expenses and revenues. Forecasting predicts future financial performance.</p>
-            <p><strong>Example:</strong> Creating a monthly budget for office supplies and salaries.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 AccountingGuru – Free Accounting Lessons for Everyone</p>
-    </footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
